@@ -1,4 +1,4 @@
-# http://guoj517.github.io
+# Amanda G
 <a href="Questionnaire.html">
         Questionnaire
         </a>  
