@@ -6,28 +6,31 @@
 
 }
 
-#header {
+.image {
+    height: 40ch;
+}
+
+h1 {
     color: white;
     background-color: black;
     padding: 3ch;
     margin: 0%;
 }
 
-h1 {
-    font-family: 'EB Garamond';
-    font-weight: bold;
+main {
+    margin-top: 5vh;
+    margin-left: 10vh;
+    margin-right: 10vh;
 }
 
 p {
     font-family:'Raleway', sans-serif;
-    font-weight: 100;
+    font-weight: 200;
 }
 
-main { 
-    background-color:white;
-    margin-top: 5vh;
-    margin-left: 10vh;
-    margin-right: 10vh;
+li {
+    color: rgb(85, 85, 85);
+
 }
 
 .italic {
