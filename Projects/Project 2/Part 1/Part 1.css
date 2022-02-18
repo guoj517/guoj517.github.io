@@ -14,7 +14,11 @@ h1 {
     color: white;
     background-color: black;
     padding: 3ch;
-    margin: 0%;
+    margin-block-start: 0%;
+    margin-block-end: 0%;
+}
+body{
+    margin:0%;
 }
 
 main {

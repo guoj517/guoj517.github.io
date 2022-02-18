@@ -10,12 +10,12 @@
     color: white;
     background-color: black;
     padding: 3ch;
-    margin: 0%;
 }
 
 h1 {
     font-family: 'EB Garamond';
     font-weight: bold;
+    margin-top: 0%;
 }
 
 p {
