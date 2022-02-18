@@ -1,0 +1,97 @@
+@font-face {
+    font-family: 'EB Garamond', serif;
+    src: url('https://fonts.googleapis.com/css2?family=EB+Garamond=swap');
+    font-display: swap;
+}
+
+main{
+    margin-bottom: 10vh;
+    margin-left: 10vh;
+    margin-right: 10vh;
+    margin-top: 5vh;
+    line-height: normal;
+}
+
+body{
+    line-height: normal;
+}
+
+hr.solid{
+    border-top: 2px solid rgb(0, 0, 0);
+}
+  
+
+h1{
+    font-size: 150px;
+    font-weight: 800;
+    font-style: italic;
+    line-height: 0.2em;
+}
+
+h2{
+    font-size: 20px;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h3{
+    font-size: 50px;
+    font-weight: 400;
+}
+
+h4{
+    font-size: 20px;
+    font-weight: 400;
+    color: rgb(92, 92, 92);
+}
+
+h5{
+    font-size: 50px;
+    font-weight: 400;
+    font-style: italic;
+}
+
+h6{
+    font-size: 50px;
+    font-weight: 500;
+}
+
+h7{
+    font-size: 50px;
+    font-weight: 500;
+    font-style: italic;
+}
+
+h8{
+    font-size: 50px;
+    font-weight: 600;
+}
+
+h9{
+    font-size: 50px;
+    font-weight: 600;
+    font-style: italic;
+}
+
+h10{
+    font-size: 50px;
+    font-weight: 700;
+}
+
+h11{
+    font-size: 50px;
+    font-weight: 700;
+    font-style: italic;
+}
+
+h12{
+    font-size: 50px;
+    font-weight: 800;
+}
+
+h13{
+        font-size: 50px;
+        font-weight: 700;
+        font-style: italic;
+
+}
