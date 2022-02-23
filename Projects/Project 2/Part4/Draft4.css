@@ -50,19 +50,19 @@ h2{
 }
 
 h3{
-    font-size: 5vw;
+    font-size: 2vw;
     font-weight: 200;
     color: white;
     position: relative;
     margin-top: 5vw;
     z-index: 1;
-    line-height: 2vw;
+    line-height: 1vw;
 }
 
 .header{
     width: 100%;
     position:fixed;
-    height: 20vw;
+    height: 25vw;
     margin-left: 0;
     margin-right: auto;
     margin-top: 0vw;
@@ -107,7 +107,7 @@ h3{
     width: 100%;
     height: auto;
     position:absolute;
-    margin-left: 14vw;
+    margin-left: 33vw;
     margin-right: auto;
     margin-top: 20vw;
 
