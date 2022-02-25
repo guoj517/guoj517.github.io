@@ -19,17 +19,37 @@ body{
 hr.solid{
     border-top: 2px solid rgb(0, 0, 0);
 }
+
+.glyphs{
+    position: absolute;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.row{
+    display: flex;
+}
   
+.column{
+    flex: 45%;
+    padding: 2vw;
+    height:auto;
+    text-align: justify;
+}
 
 h1{
-    font-size: 150px;
+    font-size: 20vw;
     font-weight: 800;
     font-style: italic;
-    line-height: 0.2em;
+    line-height: 0.8vw;
+    background-color: white;
+    margin-bottom: 10vw;
 }
 
 h2{
-    font-size: 20px;
+    font-size: 2vw;
     font-weight: 400;
     font-style: normal;
 }
@@ -37,18 +57,18 @@ h2{
 h3{
     margin-top: 0%;
     margin-bottom: 0%;
-    font-size: 50px;
+    font-size: 3vw;
     font-weight: 400;
 }
 
 h4{
-    font-size: 20px;
+    font-size: 2vw;
     font-weight: 400;
     color: rgb(92, 92, 92);
 }
 
 h5{
-    font-size: 50px;
+    font-size: 3vw;
     font-weight: 400;
     font-style: italic;
     margin-top: 0%;
@@ -58,45 +78,45 @@ h5{
 h6{
     margin-top: 0%;
     margin-bottom: 0%;
-    font-size: 50px;
+    font-size: 3vw;
     font-weight: 500;
 }
 
 h7{
-    font-size: 50px;
+    font-size: 3vw;
     font-weight: 500;
     font-style: italic;
 }
 
 h8{
-    font-size: 50px;
+    font-size: 3vw;
     font-weight: 600;
 }
 
 h9{
-    font-size: 50px;
+    font-size: 3vw;
     font-weight: 600;
     font-style: italic;
 }
 
 h10{
-    font-size: 50px;
+    font-size: 3vw;
     font-weight: 700;
 }
 
 h11{
-    font-size: 50px;
+    font-size: 3vw;
     font-weight: 700;
     font-style: italic;
 }
 
 h12{
-    font-size: 50px;
+    font-size: 3vw;
     font-weight: 800;
 }
 
 h13{
-        font-size: 50px;
+        font-size: 3vw;
         font-weight: 700;
         font-style: italic;
 

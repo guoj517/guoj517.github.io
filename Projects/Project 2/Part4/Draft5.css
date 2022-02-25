@@ -3,8 +3,37 @@
     src: url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
     font-display: swap;
 }
+.tooltip {
+    position: relative;
+    display: inline-block;
+    height: auto;
+}
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: auto;
+    background-color: rgb(255, 255, 255);
+    color:black;
+    text-align: center;
+    padding: 0.5vw;
+    border-radius: auto;
+    position: absolute;
+    z-index: 6;
+}
 
-h1,h2,h3,p{
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2vw ;
+  }
+
+.hover {
+    color: rgb(50, 50, 255);
+    background-color: transparent;
+    text-decoration: none;
+}
+
+
+h1,h2,h3,p,h4{
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -46,7 +75,7 @@ h2{
     text-align: center;
     font-weight: 200;
     text-decoration: underline;
-    z-index: 10;
+    z-index: 5;
 }
 
 h3{
@@ -59,13 +88,20 @@ h3{
     line-height: 2vw;
 }
 
-.header{
+h4{
+    font-size: 1.5vw;
+    text-align: center;
+    font-weight: 200;
+    z-index: 5;
+}
+
+.title{
     width: 100%;
     position:fixed;
-    height: 20vw;
+    height: 27vw;
     margin-left: 0;
     margin-right: auto;
-    margin-top: 0vw;
+    margin-top: 0;
     background-color: black;
     z-index: 2;
 }
@@ -75,10 +111,23 @@ h3{
     height: auto;
     position: fixed;
     align-content: center;
-    margin-left: 25vw;
+    margin-left: 29vw;
+    margin-right: auto;
+    margin-top: 20vw;
+    z-index: 3;
+}
+
+.author{
+    width: 100%;
+    height: auto;
+    position: fixed;
+    align-content: center;
+    margin-left: 43vw;
     margin-right: auto;
     margin-top: 15vw;
-    z-index: 3;
+    z-index: 4;
+    color: white;
+    text-decoration: none;
 }
 
 #wrapper{
@@ -103,13 +152,40 @@ h3{
     background-color: transparent;
 }
 
-.container{
+#parent2{
     width: 100%;
     height: auto;
+    white-space: nowrap;
+    background-color: transparent;
+    color: white;
+}
+.child2{
+    display: inline-block;
+    width: 21%;
+    height: 100%;
+    background-color: transparent;
+}
+.child3{
+    display: inline-block;
+    width: 36%;
+    height: 100%;
+    background-color: transparent;
+}
+
+.child4{
+    display: inline-block;
+    width: 12%;
+    height: 100%;
+    background-color: transparent;
+}
+
+.container{
+    width: 80vw;
+    height: auto;
     position:absolute;
-    margin-left: 14vw;
+    margin-left: 16vw;
     margin-right: auto;
-    margin-top: 20vw;
+    margin-top: 23vw;
 
 }
 

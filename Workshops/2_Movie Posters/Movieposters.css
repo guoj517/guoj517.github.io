@@ -6,11 +6,13 @@
 
 }
 html{
-    background-color:white;
+    background-color:black;
 }
 
-body{
-    background-color:white;
+
+main{
+   color: black;
+    height: 200px;
 }
 
 h1,h2{
@@ -23,25 +25,25 @@ section {
     flex-direction: row;
   }
 
-.wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+.actors{
+    margin-left: 50vw;
     background-color: black;
-
+    position: absolute;
 }
 
-.wrapper > div {
-    flex: 1;
+.title{
+    margin-left: 10vw;
+    margin-top: 0vw;
+    
 }
 
-.box1{
-    flex: 1fr;
+.bottom{
+    margin-left: auto;
+    margin-top: 50vw;
+    margin-left: 25vw;
+    position: relative;
 }
-.box2{
-    flex: 1fr;
-    flex-flow: row wrap;
-}
+
 
 h1 {
     margin-top: 1in;
@@ -63,8 +65,28 @@ h3{
     color: rgb(182, 21, 101);
 }
 
+h4{
+    font-size: 30px;
+    font-weight:400;
+    color: orange;
+}
+
+h5{
+    font-size: 80px;
+    font-weight:400;
+    color: pink;
+    line-height: 0px;
+}
+
+h6{
+    font-size: 30px;
+    font-weight:400;
+    color: orange;
+    line-height: 0px;
+}
+
 main { 
-    background-color:white;
+    background-color:black;
     margin-top: 5vh;
     margin-left: 10vh;
     margin-right: 10vh;
