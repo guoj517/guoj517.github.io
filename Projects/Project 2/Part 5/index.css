@@ -1,0 +1,46 @@
+@font-face {
+    font-family: 'EB Garamond', serif;
+    src: url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Raleway:wght@100&display=swap');
+    font-weight: 300;
+    font-display: swap;
+
+}
+
+#header {
+    color: white;
+    background-color: black;
+    padding: 3ch;
+}
+
+h1 {
+    font-family: 'EB Garamond';
+    font-weight: bold;
+    margin-top: 0%;
+}
+
+p {
+    font-family:'Raleway', sans-serif;
+    font-weight: 100;
+}
+
+main { 
+    background-color:white;
+    margin-top: 5vh;
+    margin-left: 10vh;
+    margin-right: 10vh;
+}
+
+.italic {
+    font-style:italic;
+    color:gray;
+    text-align: center;
+    padding: 5vh;
+
+}
+
+ul,
+ol{
+    font-family:'Raleway', sans-serif;
+    font-weight: 100;
+    padding-left: 2em;
+}

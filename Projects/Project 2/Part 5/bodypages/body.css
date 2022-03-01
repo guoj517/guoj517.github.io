@@ -8,26 +8,30 @@ body{
     margin: 0;
 }
 .tooltip {
-    position: relative;
+    position:sticky;
     display: inline-block;
-    height: auto;
+    height: 2vw;
 }
+
 .tooltip .tooltiptext {
     visibility: hidden;
-    width: auto;
+    width:fit-content;
+    height:fit-content;
     background-color: rgb(255, 255, 255);
     color:black;
-    text-align: center;
+    text-align:left;
     padding: 0.5vw;
     border-radius: auto;
-    position: absolute;
-    z-index: 6;
+    position:absolute;
+    display: inline-block;
+    top:1vw;
 }
 
 .tooltip:hover .tooltiptext {
     visibility: visible;
     font-family: 'Open Sans', sans-serif;
     font-size: 1.2vw ;
+    z-index: 10;
   }
 
 .hover {
@@ -69,7 +73,7 @@ h1{
     font-style: normal;
     font-weight: 800;
     font-size: 10vw;
-    color: white; 
+    color: transparent; 
     margin-top: 3vw;
     margin-bottom: 0%;
     margin-left: 1vw;
@@ -84,13 +88,13 @@ h2{
 }
 
 h3{
-    font-size: 5vw;
+    font-size: 2vw;
     font-weight: 200;
     color: white;
     position: relative;
     margin-top: 5vw;
-    z-index: 1;
-    line-height: 2vw;
+    line-height: 3vw;
+    margin-right: 10vw;
 }
 
 h4{
@@ -100,10 +104,15 @@ h4{
     z-index: 5;
 }
 
+p{
+    font-size: 1vw;
+    position: static;
+}
+
 .title{
     width: 100%;
     position:fixed;
-    height: 27vw;
+    height: 15vw;
     margin-left: 0;
     margin-right: auto;
     margin-top: 0;
@@ -118,8 +127,9 @@ h4{
     align-content: center;
     margin-left: 29vw;
     margin-right: auto;
-    margin-top: 20vw;
+    margin-top: 5vw;
     z-index: 3;
+    background-color: black;
 }
 
 .author{
@@ -189,9 +199,6 @@ h4{
     height: auto;
     position:absolute;
     margin-left: 16vw;
-    margin-right: auto;
-    margin-top: 23vw;
-
+    margin-right: 16vw;
+    margin-top: 12vw;
 }
-
-

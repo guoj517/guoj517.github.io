@@ -121,3 +121,17 @@ h13{
         font-style: italic;
 
 }
+#header {
+    color: white;
+    background-color: black;
+    padding: 3ch;
+    width: 100%;
+}
+
+h14{
+    font-family: 'EB Garamond';
+    width: 100%;
+    font-weight: bold;
+    font-size: 2em;
+    margin-top: auto;
+}
