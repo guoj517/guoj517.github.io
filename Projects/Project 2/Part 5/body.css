@@ -15,7 +15,7 @@ body{
 
 .tooltip .tooltiptext {
     visibility: hidden;
-    width:fit-content;
+    width: max-content;
     height:fit-content;
     background-color: rgb(255, 255, 255);
     color:black;
