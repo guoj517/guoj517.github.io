@@ -7,25 +7,68 @@
     font-display: swap;
   }
   
-  body {
-    margin: 1rem;
-    background-color: rgba(255, 255, 255, 0.2);
-    font-family: "Inter";
-    font-size: 14px;
-    letter-spacing: 0.1px;
+  .example {
+    font-size: 2rem;
   }
-  
-  a {
-    color: rgb(129, 129, 129);
-    text-decoration: underline;
+  .example p {
+    margin: 0;
   }
-  
-  a:hover {
-    color: rgb(50, 50, 50);
+  .logo {
+    box-sizing: border-box;
+
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
   }
-  
-  li,
-  p {
-    max-width: 60ch;
+  .logo .word {
+    text-transform: uppercase;
+  }
+  .logo .word .main-letter {
+  }
+  .logo .word .remaining-word {
+    display: none;
+  }
+  .reverse {
+    display: inline-block;
+    -moz-transform: scale(-1, 1);
+    -webkit-transform: scale(-1, 1);
+    -o-transform: scale(-1, 1);
+    -ms-transform: scale(-1, 1);
+    transform: scale(-1, 1);
+  }
+  @media screen and (min-width: 768px) {
+    .example {
+      font-size: 3rem;
+    }
+    .logo {
+      padding: 0 0.5rem;
+      border: 4px solid black;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    .example {
+      font-size: 4rem;
+    }
+    .logo {
+      padding: 0.5rem 1rem;
+      border: 8px solid black;
+    }
+    .logo .word {
+      padding-right: 0.8ch;
+    }
+    .logo .word:last-child {
+      padding-right: 0;
+    }
+    .logo .word .remaining-word {
+      display: inline-block;
+    }
+    .reverse {
+      display: inline-block;
+      -moz-transform: initial;
+      -webkit-transform: initial;
+      -o-transform: initial;
+      -ms-transform: initial;
+      transform: initial;
+    }
   }
   
