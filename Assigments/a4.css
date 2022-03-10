@@ -1,0 +1,139 @@
+@font-face {
+    font-family: 'Creepster', cursive;
+    src: url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
+    font-display: swap;
+}
+
+body{
+    background-size: cover;
+    height: auto;
+    padding:0;
+    margin:0;
+}
+
+.Background{
+    width:120vw;
+    height: auto;
+    position:fixed;
+    margin:0%;
+}
+
+a :link {
+    background-color: transparent;
+    text-decoration:underline;
+  }
+  
+a :hover {
+    color: white;
+    background-color: transparent;
+  }
+
+.bgm{
+    position: fixed;
+    align-self: center;
+    margin-top: 45vw;
+    margin-left: 8vw;
+}
+
+.Playlist{
+    position: fixed;
+    align-self: center;
+    margin-top: 10vw;
+    margin-left: 8vw;
+}
+
+h1{
+    font-family: 'Creepster', cursive;
+    font-size: 10vw;
+    text-align: center;
+    margin-top: 15vw;
+    position:fixed;
+    color: rgb(28, 238, 0);
+}
+
+h2{
+    font-family: 'Creepster', cursive;
+    font-size: 2vw;
+    text-align: center;
+    margin-top: 10vw;
+    margin-left: 10vw;
+    position:fixed;
+    color: rgb(28, 238, 0);
+}
+
+p{
+    font-family: Arial, sans-serif;
+    font-size: 1.2vw;
+    text-align: left;
+    margin-top: 10.5vw;
+    margin-left: 51vw;
+    margin-right: 8vw;
+    position:fixed;
+    color: rgb(28, 238, 0);
+}
+
+.tooltip {
+    position:fixed;
+    display: inline-block;
+    height: 2vw;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width:max-content;
+    height:fit-content;
+    background-color:black;
+    color:rgb(28, 238, 0);
+    text-align:left;
+    padding: 0.5vw;
+    border-radius: auto;
+    border: 1px solid white;
+    position:absolute;
+    margin-left: 10vw;
+    margin-top: 3vw;
+    display: inline-block;
+    top:1vw;
+    font-family: 'Courier New', Courier, monospace;
+    font-family: 100;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2vw ;
+    z-index: 10;
+  }
+
+.hover {
+    color: rgb(50, 50, 255);
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.outer-grid {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    z-index: 1;
+    margin-left: 8vw;
+ }
+ .inner-grid {
+    flex: 30%;
+    max-width: 33%;
+    padding: 5 4vw;
+    z-index: 1;
+    margin-top: 40vw;
+ }
+
+ @media screen and (max-width: 800px) {
+    .inner-grid {
+       flex: 50%;
+       max-width: 50%;
+    }
+ }
+ @media screen and (max-width: 600px) {
+    .inner-grid {
+       flex: 100%;
+       max-width: 100%;
+    }
+ }
