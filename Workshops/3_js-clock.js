@@ -1,6 +1,4 @@
-const newInterwal = setInterval(function(){
-    console.log(new Date)
-}, 1000)
+
 
 function startTime() {
     const today = new Date();
@@ -10,10 +8,13 @@ function startTime() {
     m = checkTime(m);
     s = checkTime(s);
     document.getElementById('txt').innerHTML =  h + ":" + m + ":" + s;
-    setTimeout(startTime, 1000);
-  }
-  
-  function checkTime(i) {
+}
+
+function checkTime(i) {
     if (i < 10) {i = "0" + i};  
     return i;
-  }
+}
+
+const newInterwal = setInterval(function(){
+    startTime()
+}, 1000)
