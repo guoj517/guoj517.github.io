@@ -20,7 +20,8 @@ h1 {
 
 h2{
     font-family:'Raleway', sans-serif;
-    font-weight: 300;
+    font-weight: 500;
+    font-size: 1.5vw;
 }
 
 body{
@@ -31,6 +32,7 @@ main {
     margin-top: 5vh;
     margin-left: 10vh;
     margin-right: 10vh;
+    margin-bottom: 5vw;
 }
 
 p {
