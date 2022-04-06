@@ -1,0 +1,23 @@
+*, *before, *:after{
+    box-sizing: border-box;
+}
+div#illustrations{
+    align-self: center;
+    display:flex;
+    flex-wrap: wrap;
+}
+
+div.container{
+    padding: 1%;
+    margin: 1%;
+    width: 20%;
+}
+
+img.image{
+    max-width: 100%;
+}
+
+p.title{
+    text-align: center;
+}
+

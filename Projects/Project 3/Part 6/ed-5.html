@@ -1,0 +1,60 @@
+<!doctype html>
+
+<html>
+<main>
+<head>
+        <link rel="stylesheet" type="text/css" href="./normalize.css">    
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="Part-6.css">
+        <script src="Part-6.js" type="text/javascript" defer></script>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=EB+Garamond=swap');
+            #map {
+            position: fixed;
+            top: 42vw;
+            left:40vw;
+            width: 20vw;
+            height: 100%;
+            z-index: 100;
+        }
+        h1{
+            font-family: 'EB Garamond', serif;
+            font-size: 2vw;
+            font-weight: 100;
+            color: rgb(255, 70, 57);
+            position: relative;
+            top: 20vw;
+            left: 5vw;
+        }
+        </style>
+    </head>
+<body>
+<canvas id='map'></canvas>
+<script src="pagemap.js"></script>
+<script>
+    pagemap(document.querySelector('#map'), {
+    viewport: null,
+    styles: {
+        'header,footer,section,article': 'rgba(0,0,0,0.08)',
+        'h1,a': 'rgba(0,0,0,0.10)',
+        'h2,h3,h4': 'rgba(0,0,0,0.08)'
+    },
+    back: 'rgba(0,0,0,0.02)',
+    view: 'rgba(0,0,0,0.05)',
+    drag: 'rgba(0,0,0,0.10)',
+    interval: null
+});
+</script>
+
+<button type="button">Theme</button>
+    
+<button type="button">Location</button>
+
+
+<div id="illustrations"></div>
+</body>
+
+</main>
+
+</html>
+

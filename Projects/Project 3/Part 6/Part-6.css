@@ -1,0 +1,22 @@
+#map {
+    position: fixed;
+    top: 42vw;
+    left:5vw;
+    width: 20vw;
+    height: 100%;
+    z-index: 100;
+}
+ h1{
+     font-family: 'EB Garamond', serif;
+     font-size: 2vw;
+ }
+
+#zoom:hover {
+    font-size: 2.1vw;
+}
+
+button {
+    position: relative;
+    top: 51vw;
+    left:5vw;
+}
