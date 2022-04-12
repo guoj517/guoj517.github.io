@@ -4,7 +4,7 @@ const airtableDatabaseUrl = "https://api.airtable.com/v0/appTJh4SNTi7XOAW3/Proje
 
 const authenticatedUrl = airtableDatabaseUrl + "?api_key=" + airtableApiKey
 
-const illustrationContainerElement = document.querySelector('#illustrations')
+const illustrationContainerElement = document.querySelector('#assets')
 
 const fetchPromise = fetch(authenticatedUrl)
 const jsonPromise = fetchPromise.then ((response) => {
