@@ -1,0 +1,111 @@
+#map {
+    position: fixed;
+    top: 2vw;
+    left:82vw;
+    width: 30vw;
+    height: auto;
+    z-index: 1;
+    background-color: white;
+    z-index: 3;
+    border-style: solid;
+}
+
+main{
+    height: 500vw;
+    width: 500vw;
+}
+
+body{
+    margin:0;
+}
+
+h1{
+     font-family: 'EB Garamond', serif;
+     font-size: 2vw;
+     margin:0;
+     position: fixed;
+     z-index: 2;
+     font-weight: 500;
+     padding-top: 2vw;
+     padding-left: 2vw;
+     padding-right: 10vw;
+     padding-bottom: 2vw;
+     background-color: white;
+ }
+
+ h2{
+    font-family: 'EB Garamond', serif;
+    font-size: 2vw;
+    margin-left: 20vw;
+    margin-top: 0vw;
+    margin-bottom: 0;
+    padding:2vw;
+    padding-right: 34.5vw;
+    position: fixed;
+    z-index: 2;
+    font-weight: 100;
+    color: rgb(151, 151, 151);
+    background-color: white;
+ }
+
+p{
+    font-family: 'EB Garamond', serif;
+    font-size: 2vw;
+}
+
+.tooltip {
+    position: fixed;
+    display: inline-block;
+    margin-left: 70vw;
+    margin-top: 2vw;
+    z-index: 3;
+    font-family: 'EB Garamond', serif;
+    font-size: 2vw;
+    font-weight: 100;
+    color: rgb(151, 151, 151);
+  }
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    position: fixed;
+    margin-top: 3vw;
+    margin-left: -12vw;
+    width: 20vw;
+    height: auto;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    text-align:center;
+    padding: 5px 0;
+    border-radius: 6px;
+    font-family: 'EB Garamond', serif;
+    font-size: 1vw;
+    font-weight: 100;
+    color: rgb(0, 0, 0);
+    border-style: solid;
+  }
+  
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    position: absolute;
+    z-index: 2;
+  }
+
+.tooltip:hover{
+    color: black;
+}
+
+
+button {
+    position:fixed;
+    z-index: 2;
+    margin-top: 2vw;
+    margin-left:70vw;
+}
+
+img{
+    height: 30vw;
+    width: auto;
+    margin-top: 8vw;
+    margin-left: 2vw;
+    position: relative;
+}

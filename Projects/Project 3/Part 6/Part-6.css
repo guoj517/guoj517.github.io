@@ -12,11 +12,14 @@ main{
     width: 500vw;
 }
 
- h1{
+h1{
      font-family: 'EB Garamond', serif;
      font-size: 2vw;
      margin: 2vw;
      margin-right: 20vw;
+     position: fixed;
+     z-index: 2;
+     font-weight: 100;
  }
 
 p{
@@ -38,6 +41,7 @@ button {
 img{
     height: 50vw;
     width: auto;
-    margin: 2vw;
+    margin-top: 5vw;
+    margin-left: 2vw;
     position: relative;
 }
