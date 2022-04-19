@@ -1,0 +1,61 @@
+p{
+    font-size: 1.5vw;
+    margin-top: 1vw;
+    margin-left: 36vw;
+}
+
+html{
+    background-color: rgb(199, 199, 199);
+}
+
+body
+{
+    margin-top: 6vw;
+}
+
+.tooltip {
+   
+    position: fixed;
+    display: inline-block;
+    font-size: 2vw;
+    margin-left: 5vw;
+  }
+
+.tooltip .tooltiptext {
+    margin-left:-18vw;
+    margin-top: 3vw;
+    visibility: hidden;
+    position: fixed;
+    width: 20vw;
+    height: auto;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    text-align:center;
+    padding: 5px 0;
+    border-radius: 6px;
+    font-size: 1vw;
+    color: rgb(0, 0, 0);
+    border-style: solid;
+  }
+  
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    position: absolute;
+    z-index: 2;
+  }
+
+.tooltip:hover{
+    color: rgb(87, 87, 87);
+}
+
+#color{
+    color: rgb(3, 0, 207);
+}
+
+#time{
+    color: rgb(3, 0, 207);
+}
+
+#adj{
+    color: rgb(3, 0, 207);
+}

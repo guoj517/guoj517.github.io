@@ -1,94 +1,80 @@
 // STEP 1: VARIABLES
-const weapons = [{
-        name: "Ruins Greatsword", 
-        description: "Originally rubble from a ruin which fell from the sky, this surviving fragment was honed into a weapon.",
-        attack: 124
-    },
-    {
-        name: "Eclipse Shotel", 
-        description: "Storied sword and treasure of Castle Sol that depicts an eclipsed sun drained of color.",
-        attack: 77, 
-    },
-    {
-        name: "Grafted Blade Greatsword", 
-        description: "Storied sword and treasure of Castle Sol that depicts an eclipsed sun drained of color.",
-        attack: 157, 
-    },]
+const users = [{
+    name: "Ruins Greatsword", 
+    description: "Originally rubble from a ruin which fell from the sky, this surviving fragment was honed into a weapon.",
+    attack: 124
+},
+{
+    name: "Eclipse Shotel", 
+    description: "Storied sword and treasure of Castle Sol that depicts an eclipsed sun drained of color.",
+    attack: 77, 
+},
+{
+    name: "Grafted Blade Greatsword", 
+    description: "Storied sword and treasure of Castle Sol that depicts an eclipsed sun drained of color.",
+    attack: 157, 
+},]
 
 // STEP 2: DOM REFERENCES
-const weaponsContainerElement = document.querySelector('#weapons')
-const showweaponsWithPercentageAttackElement = document.querySelector("button#map")
-const showStrongWeapon = document.querySelector('button#strongWeapon')
-const showweaponsSortedByNameAscendingButtonElement = document.querySelector('button#sort-ascending')
+const usersContainerElement = document.querySelector('#users')
+const showUsersWithCreditInDollarsButtonElement = document.querySelector("button#map")
+const showstrongUsersButtonElement = document.querySelector('button#strong')
+const showUsersSortedByNameAscendingButtonElement = document.querySelector('button#sort-ascending')
 
 // STEP 3: FUNCTIONS
-const createweaponElement = (weapon) => {
+const createUserElement = (user) => {
     // Create Container Element
     const containerElement = document.createElement('div')
-    containerElement.classList.add('weapon')
+    containerElement.classList.add('user')
     // Create Name Element
     const nameElement = document.createElement('p')
-    nameElement.innerHTML = 'name: ' + weapon.name
-    // Create description Element
-    const descriptionElement = document.createElement('p')
-    descriptionElement.innerHTML = 'description: ' + weapon.description
-    // Create attack Element
-    const attackElement = document.createElement('p')
-    attackElement.innerHTML = 'attack:' + weapon.attack
+    nameElement.innerHTML = 'Name: ' + user.name
     // Create strong Element
     const strongElement = document.createElement('p')
-    strongElement.innerHTML = 'strong:' + weapon.strong
-
+    strongElement.innerHTML = 'strong: ' + user.strong
+    // Create attack Element
+    const creditElement = document.createElement('p')
+    creditElement.innerHTML = 'Attack:' + user.attack
     containerElement.appendChild(nameElement)
-    containerElement.appendChild(descriptionElement)
-    containerElement.appendChild(attackElement)
     containerElement.appendChild(strongElement)
-    
+    containerElement.appendChild(creditElement)
     return containerElement
 }
 
-const removeweapons = () => {
-    weaponsContainerElement.innerHTML = ""
+const removeUsers = () => {
+    usersContainerElement.innerHTML = ""
 }
 
-const addweapons = (weapons) => {
-    weapons.forEach(weapon => {
-        const weaponElement = createweaponElement(weapon)
-        weaponsContainerElement.appendChild(weaponElement)
+const addUsers = (users) => {
+    users.forEach(user => {
+        const userElement = createUserElement(user)
+        usersContainerElement.appendChild(userElement)
     });
 }
 
 // STEP 4: APPLICATION
 // MAP
-const weaponsWithPercentageAttack = weapons.map((weapon) => {
-    const weaponsWithPercentageAttack = {
-        name: weapon.name, 
-        attack: weapon.attack, 
-        description: weapon.description
+const usersWithCreditInDollars = users.map((user) => {
+    const userWithCreditInDollars = {
+        name: user.name, 
+        attack: user.attack, 
+        strong: user.strong
     }
-    const attackInDollars = weaponsWithPercentageAttack.attack / 100 
-    weaponsWithPercentageAttack.attack = '%' + attackInDollars
-    return weaponsWithPercentageAttack
+    const creditInDollars = userWithCreditInDollars.attack / 100 
+    userWithCreditInDollars.attack = '%' + creditInDollars
+    return userWithCreditInDollars
 })
 
 // FILTER
-var input = attck (9,3,4.3,24,54,8,19,23,46,87,3.14);
-
-var newArray = attack ();
-input.forEach(function(attack){
-    if(attack > 100)
-    {
-    return weaponsWithPercentageAttack
-    }
-
-})
+//const strongUsers = users.filter((user) => 
+//attack > 100);
 
 // SORT 
-const weaponsSortedByNameAscending = weapons.sort((weaponA, weaponB) => {
-    if (weaponA.name < weaponB.name) {
+const usersSortedByNameAscending = users.sort((userA, userB) => {
+    if (userA.name < userB.name) {
         return -1;
       }
-      if (weaponA.name > weaponB.name) {
+      if (userA.name > userB.name) {
         return 1;
       }
     
@@ -98,21 +84,20 @@ const weaponsSortedByNameAscending = weapons.sort((weaponA, weaponB) => {
 
 
 // SET EVENT LISTENERS
-showweaponsWithPercentageAttackElement.addEventListener('click', () => {
-    removeweapons()
-    addweapons(weaponsWithPercentageAttack)
+showUsersWithCreditInDollarsButtonElement.addEventListener('click', () => {
+    removeUsers()
+    addUsers(usersWithCreditInDollars)
 })
 
-showStrongWeapon.addEventListener('click', () => {
-    removeweapons()
-    addweapons(strong)
+showstrongUsersButtonElement.addEventListener('click', () => {
+    removeUsers()
+    addUsers(strongUsers)
 })
 
-showweaponsSortedByNameAscendingButtonElement.addEventListener('click', () => {
-    removeweapons()
-    addweapons(weaponsSortedByNameAscending)
+showUsersSortedByNameAscendingButtonElement.addEventListener('click', () => {
+    removeUsers()
+    addUsers(usersSortedByNameAscending)
 })
 
 // START APP
-addweapons(weapons)
-
+addUsers(users)

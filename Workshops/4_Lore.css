@@ -6,16 +6,10 @@ main{
     margin: 2vw;
 }
 
-#weapons {
+.user {
     margin-bottom: 1rem;
     border: 1px solid black; 
     padding: 1rem; 
-}
-
-#header {
-    color: white;
-    background-color: black;
-    padding: 3ch;
 }
 
 h1 {
