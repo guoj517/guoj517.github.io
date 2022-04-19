@@ -37,6 +37,8 @@ fetch(authenticatedUrl)
     const adjs = words.filter((word) => {
         return word.fields.catagory === 'adj'
     })
+
+
     // Set Values onto HTML Elements 
     colorElement.innerHTML = colors[Math.floor(Math.random()*colors.length)].fields.text
     adjElement.innerHTML = adjs[Math.floor(Math.random()*adjs.length)].fields.text

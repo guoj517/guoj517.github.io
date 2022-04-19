@@ -112,5 +112,5 @@ img{
     width: auto;
     margin-top: 2vw;
     margin-left: 2vw;
-    position: relative;
+    position: fixed;
 }
