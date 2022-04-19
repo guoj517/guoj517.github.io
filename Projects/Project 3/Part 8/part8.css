@@ -112,5 +112,25 @@ img{
     width: auto;
     margin-top: 2vw;
     margin-left: 2vw;
-    position: fixed;
+}
+
+div#A, div#B{
+    padding: 0;
+    margin:0;
+    position: absolute;
+    width:100vw;
+    display: flex;
+    flex-direction: row;
+    }
+
+div#A{
+    height:30vh;
+    top:10vw;
+    left:2vw;
+}
+
+div#B{
+    height:30vh;
+    top:50vw;
+    left:60vw;
 }

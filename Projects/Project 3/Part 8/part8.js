@@ -6,28 +6,10 @@ const authenticatedUrl = airtableDatabaseUrl + "?api_key=" + airtableApiKey
 
 const illustrationContainerElement = document.querySelector('#assets')
 
-// Get a 'Promise' Representing the Data that Will be Returned
-fetch(authenticatedUrl)
-  // When 'Promise' is 'Resolved', get the JSON data
-  .then((res) => res.json())
-  // Use the JSON Data
-  .then((data) => {
-    console.log(data)
-    const groups = data.records;
-
-    const A = groups.filter((letter) => {
-        return letter.fields.catagory === 'A'
-    })
-    const B = groups.filter((letter) => {
-        return letter.fields.catagory === 'B'
-    })
-    const C = groups.filter((letter) => {
-        return letter.fields.catagory === 'C'
-    })
-})
-
 //step 2: get references to DOM
 const AContainerElement = document.querySelector('#A')
+const BContainerElement = document.querySelector('#B')
+const CContainerElement = document.querySelector('#C')
 
 //step 3: application
 //fetch the data
@@ -40,14 +22,12 @@ jsonPromise.then((data) => {
     console.log(data)
     const records = data.records
     for (let index = 0; index < records.length; index++) {
-        const title = records[index].fields.Title
         const imageUrl = records[index].fields.image[0].url
-        const tags = records[index].fields.Tags
         //create container element
         const containerElement= document.createElement('div')
         containerElement.classList.add('container')
-        const randomLeft = Math.random() * window.innerWidth * 0.8
-        randomTop = Math.random() * window.innerWidth * 0.8
+        const randomLeft = Math.random() * window.innerWidth * 2
+        randomTop = Math.random() * window.innerWidth * 2
         containerElement.style.position = 'absolute'
         containerElement.style.left = randomLeft + "px"
         containerElement.style.top = randomTop + "px"
@@ -56,8 +36,16 @@ jsonPromise.then((data) => {
         imageElement.classList.add('image' , 'A-image')
         imageElement.setAttribute('src',imageUrl)
         //add container element to DOM 
-        //add image element in containers
-        //add A to containers
+        //add image element to containers
+        //add groupA to containers
+        if(records.fields.Name === "A") {
+            AContainerElement.appendChild(containerElement);
+            containerElement.appendChild(imageElement);      
+          }
+        else if(records.fields.Name === "B"){
+            BContainerElement.appendChild(containerElement);
+            containerElement.appendChild(imageElement);
+          }
 
     }
 })
