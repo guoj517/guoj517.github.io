@@ -44,7 +44,7 @@ jsonPromise.then((data) => {
     const records = data.records
     for (let index = 0; index < records.length; index++) {
         const title = records[index].fields.Title
-        const imageUrl = records[index].fields.Assets[0].url
+        const imageUrl = records[index].fields.image[0].url
         const tags = records[index].fields.Tags
         //create container element
         const containerElement= document.createElement('div')
@@ -61,10 +61,7 @@ jsonPromise.then((data) => {
         //add container element to DOM 
         //add image element in containers
         //add A to containers
-        if (tags.includes("A")){
-        AContainerElement.appendChild(containerElement)
-        containerElement.appendChild(imageElement)
-        }
+
     }
 })
 
