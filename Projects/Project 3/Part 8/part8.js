@@ -28,9 +28,6 @@ fetch(authenticatedUrl)
 
 //step 2: get references to DOM
 const AContainerElement = document.querySelector('#A')
-const bodyContainerElement = document.querySelector('#body')
-const handsContainerElement = document.querySelector('#hands')
-const feetContainerElement = document.querySelector('#feet')
 
 //step 3: application
 //fetch the data
