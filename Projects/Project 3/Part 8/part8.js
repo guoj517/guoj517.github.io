@@ -26,8 +26,8 @@ jsonPromise.then((data) => {
         //create container element
         const containerElement= document.createElement('div')
         containerElement.classList.add('container')
-        const randomLeft = Math.random() * window.innerWidth * 2
-        randomTop = Math.random() * window.innerWidth * 2
+        const randomLeft = Math.random() * window.innerWidth * 8
+        randomTop = Math.random() * window.innerWidth * 8
         containerElement.style.position = 'absolute'
         containerElement.style.left = randomLeft + "px"
         containerElement.style.top = randomTop + "px"
@@ -38,14 +38,17 @@ jsonPromise.then((data) => {
         //add container element to DOM 
         //add image element to containers
         //add groupA to containers
-        if(records.fields.Name === "A") {
-            AContainerElement.appendChild(containerElement);
-            containerElement.appendChild(imageElement);      
-          }
-        else if(records.fields.Name === "B"){
-            BContainerElement.appendChild(containerElement);
-            containerElement.appendChild(imageElement);
-          }
+        AContainerElement.appendChild(containerElement);
+        containerElement.appendChild(imageElement); 
+        
+       // if(records.fields.Name === "A") {
+           // AContainerElement.appendChild(containerElement);
+            //containerElement.appendChild(imageElement);      
+         // }
+       // else if(records.fields.Name === "B"){
+            //BContainerElement.appendChild(containerElement);
+            //containerElement.appendChild(imageElement);
+          //}
 
     }
 })
