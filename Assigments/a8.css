@@ -1,0 +1,83 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+li
+{
+  list-style-type: circle;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(230, 230, 230);
+}
+
+h1{
+  font-weight: 100;
+  color:rgb(38, 0, 255);
+}
+
+input[type=text] {
+  width: auto;
+  box-sizing: border-box;
+  border: 1px solid rgb(38, 0, 255);
+  border-radius: 4px;
+  font-size: 1vw;
+  background-color: white;
+  background-position: 10px 10px; 
+  background-repeat: no-repeat;
+  padding: 12px 60px 12px 20px;
+  transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:focus {
+  width: 100%;
+}
+
+#application {
+  height: 30vw;
+  width:100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 5vw;
+}
+
+button{
+    display: inline-block;
+    padding: 0.5vw 1vw;
+    font-size: 1vw;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: rgb(38, 0, 255);;
+    border: none;
+    border-radius: 1vw;
+    box-shadow: 0 0.5vw rgb(132, 151, 255);
+  }
+  
+  .button:hover {background-color: rgb(38, 0, 255)}
+  
+  .button:active {
+    background-color: rgb(38, 0, 255);
+    box-shadow: 0 0.2vw rgb(132, 151, 255);
+    transform: translateY(4px);
+  }
+
+.clickstuff{
+position: fixed;
+margin-left: 42vw;
+ z-index: 1;
+}
+
+::placeholder{
+  color: rgb(132, 151, 255);
+}
