@@ -1,0 +1,31 @@
+h1{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2vw;
+    font-family: 100;
+    color: blue;
+}
+
+marquee{
+    height: auto;
+    position: fixed;
+}
+
+.canvas{
+    height: 40vw;
+    width: 60vw;
+    position: fixed;
+    margin-left: 20vw;
+    margin-top: 8vw;
+    background-color:white;
+    border-style: solid;
+    border-color: blue;
+}
+
+img{
+    height: 8vw;
+}
+
+div{
+    margin-left: 3vw;
+}
+
