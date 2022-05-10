@@ -18,7 +18,11 @@ jsonPromise.then ((data)=> {
         
         const containerElement = document.createElement('div')
         containerElement.classList.add('container')
-
+        const randomLeft = Math.random() * window.innerWidth * 0.8
+        randomTop = Math.random() * window.innerWidth * 0.4
+        containerElement.style.position = 'absolute'
+        containerElement.style.left = randomLeft + "px"
+        containerElement.style.top = randomTop + "px"
         const imageElement = document.createElement('img')
         imageElement.classList.add('image')
         imageElement.setAttribute('src', imageUrl)
@@ -32,7 +36,9 @@ jsonPromise.then ((data)=> {
 })
 
 
-dragElement(document.getElementById("imageElement"));
+
+
+
 function dragElement(elmnt) {
     var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
     if (document.getElementById(elmnt.id + "header")) {
@@ -63,6 +69,7 @@ function dragElement(elmnt) {
       pos3 = e.clientX;
       pos4 = e.clientY;
       // set the element's new position:
+      elmnt.style.position = 'absolute'
       elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
       elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
     }

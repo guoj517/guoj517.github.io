@@ -1,8 +1,8 @@
 h1{
     font-family: 'Courier New', Courier, monospace;
-    font-size: 2vw;
+    font-size: 1.5vw;
     font-family: 100;
-    color: blue;
+    color: black;
 }
 
 marquee{
@@ -11,21 +11,45 @@ marquee{
 }
 
 .canvas{
-    height: 40vw;
-    width: 60vw;
+    height: 36vw;
+    width: 56vw;
     position: fixed;
-    margin-left: 20vw;
+    margin-left: 22vw;
     margin-top: 8vw;
     background-color:white;
-    border-style: solid;
-    border-color: blue;
+    box-shadow: 10px 10px 20px rgb(129, 166, 197);
 }
 
 img{
-    height: 8vw;
+    height: 15vw;
 }
 
-div{
-    margin-left: 3vw;
+#pngs{
+    margin-left: 2vw;
 }
 
+.tooltip {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    margin-left: 50vw;
+    z-index: 2;
+    
+    opacity: 0;
+    transition: opacity 0.5s;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }
