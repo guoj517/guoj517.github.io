@@ -1,4 +1,4 @@
-document.getElementById("colored-element").style.color = "#6a0dad";
+document.getElementById("colored-element").style.color = "#DDA0DD";
 
 const childElement = document.createElement('p')
     childElement.innerHTML = "Let's go with the dough!"
